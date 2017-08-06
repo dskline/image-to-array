@@ -3,14 +3,17 @@
   "version": "0.0.0-development",
   "description": "Finds an array of rectangular images from a single image with a gradient background.",
   "main": "image-to-array.js",
+  "author": "Spencer Kline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dskline/image-to-array.git"
+  },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start",
     "build": "webpack --config webpack/webpack.base.js --progress",
-    "precommit": "npm run build && npm test",
     "prepush": "npm run build && npm test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "author": "Spencer Kline",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
@@ -21,6 +24,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-register": "^6.24.1",
     "chai": "^3.4.1",
+    "coveralls": "^2.13.1",
     "croppie": "^2.4.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
@@ -37,15 +41,12 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
+    "pre-push": "^0.1.1",
     "semantic-release": "^6.3.6",
     "webpack": "^2.6.1",
     "webpack-async-await": "^1.1.0",
     "webpack-merge": "^4.1.0",
     "whatwg-fetch": "^2.0.3",
     "yargs": "^8.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dskline/image-to-array.git"
   }
 }
