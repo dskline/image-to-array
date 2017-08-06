@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ImageToArray Example</title>
+  <script type="text/javascript" src="../dist/image-to-array.js"></script>
+</head>
+<body>
+  <form>
+    <input id="imageInput" type="file" onchange="handleUpload(this.files[0])" />
+    <img id="uploadedImage" />
+  </form>
+
+  <script>
+    function handleUpload(img) {
+      const fileReader = new FileReader();
+
+      fileReader.onload = function() {
+        document.getElementById('uploadedImage').src = fileReader.result;
+
+        // instantiate a new ImageToArray object with a base64 image string
+        const imageToArray = new ImageToArray(fileReader.result, { colorThreshold: 50, minImageWidth: 50 });
+
+        imageToArray.split().then(function(result) {
+          // result contains an array of cropped base64 images
+          result.forEach(function(r) {
+            // display each new image
+            const newImage = document.createElement('img');
+            newImage.src = r;
+            document.getElementsByTagName('body')[0].appendChild(newImage);
+          });
+        });
+      };
+      fileReader.readAsDataURL(img);
+    }
+  </script>
+</body>
+</html>
