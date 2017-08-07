@@ -10,8 +10,7 @@
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start",
-    "build": "webpack --config webpack/webpack.base.js --progress",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "build": "webpack --config webpack/webpack.base.js --progress"
   },
   "precommit": "build, test",
   "devDependencies": {

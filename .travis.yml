@@ -8,9 +8,28 @@ node_js:
   - 'stable'
 before_script:
   - npm prune
+script:
+  - npm run build
+  - npm test
 after_success:
   - cat ./coverage/lcov.info | node node_modules/.bin/coveralls
-  - npm run semantic-release
+before_deploy:
+  - semantic-release pre
+deploy:
+  - provider: npm
+    email: dskline1@gmail.com
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: releases
+    api_key: $GH_TOKEN
+    file: dist/image-to-array.js
+    skip_cleanup: true
+    on:
+      all_branches: true
+after_deploy:
+  - semantic-release post
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
