@@ -1,6 +1,6 @@
 const webpackConfig = require('./webpack/test.js');
 
-module.exports = function (config) {
+module.exports = function(config) {
   config.set({
     webpack: webpackConfig,
     frameworks: ['mocha'],

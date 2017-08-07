@@ -1,3 +1,8 @@
+[![npm version](https://badge.fury.io/js/image-to-array.svg)](https://badge.fury.io/js/image-to-array)
+[![Build Status](https://travis-ci.org/dskline/image-to-array.svg?branch=master)](https://travis-ci.org/dskline/image-to-array)
+[![Coverage Status](https://coveralls.io/repos/github/dskline/image-to-array/badge.svg?branch=master)](https://coveralls.io/github/dskline/image-to-array?branch=master)
+[![Code Climate](https://codeclimate.com/github/dskline/image-to-array/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate)
+
 # Image-to-Array.js
 
 A simple Javascript library that extracts an array of rectangular images from a single (large) image with a solid or 

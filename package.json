@@ -13,7 +13,7 @@
     "build": "webpack --config webpack/webpack.base.js --progress",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "prepush": "build, test",
+  "precommit": "build, test",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
@@ -41,7 +41,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
-    "pre-push": "^0.1.1",
+    "pre-commit": "^1.2.2",
     "semantic-release": "^6.3.6",
     "webpack": "^2.6.1",
     "webpack-async-await": "^1.1.0",

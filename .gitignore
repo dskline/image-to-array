@@ -1,6 +1,7 @@
 node_modules
 .nyc_output
 coverage
+dist
 .idea
 .tmp
 package-lock.json
