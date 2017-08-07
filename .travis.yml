@@ -13,7 +13,6 @@ script:
   - npm test
 after_success:
   - cat ./coverage/lcov.info | node node_modules/.bin/coveralls
-before_deploy:
   - semantic-release pre
 deploy:
   - provider: npm
@@ -28,7 +27,7 @@ deploy:
     skip_cleanup: true
     on:
       all_branches: true
-after_deploy:
+after_script:
   - semantic-release post
 branches:
   except:
