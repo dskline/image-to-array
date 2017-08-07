@@ -5,6 +5,8 @@
 
 # Image-to-Array.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dskline/image-to-array.svg)](https://greenkeeper.io/)
+
 A simple Javascript library that extracts an array of rectangular images from a single (large) image with a solid or 
 gradient background.
 
