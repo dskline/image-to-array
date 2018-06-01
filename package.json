@@ -42,7 +42,7 @@
     "mocha": "^3.4.2",
     "pre-commit": "^1.2.2",
     "semantic-release": "^6.3.6",
-    "webpack": "^3.4.1",
+    "webpack": "^4.10.2",
     "webpack-async-await": "^1.1.0",
     "webpack-merge": "^4.1.0",
     "whatwg-fetch": "^2.0.3",
