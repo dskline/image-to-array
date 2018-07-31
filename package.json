@@ -41,7 +41,7 @@
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
     "pre-commit": "^1.2.2",
-    "semantic-release": "^6.3.6",
+    "semantic-release": "^15.9.3",
     "webpack": "^3.4.1",
     "webpack-async-await": "^1.1.0",
     "webpack-merge": "^4.1.0",
