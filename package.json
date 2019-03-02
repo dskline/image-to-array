@@ -25,7 +25,7 @@
     "chai": "^4.1.1",
     "coveralls": "^2.13.1",
     "croppie": "^2.4.1",
-    "eslint": "^4.4.1",
+    "eslint": "^5.15.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-loader": "^1.8.0",
     "eslint-plugin-import": "^2.6.0",
