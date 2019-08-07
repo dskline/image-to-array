@@ -23,7 +23,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-register": "^6.24.1",
     "chai": "^4.1.1",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.6",
     "croppie": "^2.4.1",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
